@@ -1,0 +1,24 @@
+@import "variables";
+@import "mixins";
+
+.header {
+  padding: 20px 0;
+  background: #000;
+  color: $color-white;
+  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: bold;
+    @media (max-width: $mobile - .1px) {
+      max-width: 71px;
+    }
+  }
+
+}
