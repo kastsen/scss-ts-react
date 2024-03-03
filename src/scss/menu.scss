@@ -2,6 +2,15 @@
 @import "mixins";
 
 .menu {
+  @media (max-width: $tablet - .1px) {
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+  }
+
   &__list {
     gap: 56px;
     font-size: 18px;
@@ -42,12 +51,12 @@
     width: 32px;
     height: 38px;
     position: absolute;
-    top: 20px;
+    top: 5px;
     right: 20px;
     cursor: pointer;
     z-index: 2;
     @media (min-width: $tablet) {
-      display: none;
+      display: none !important;
     }
 
     &--active {
